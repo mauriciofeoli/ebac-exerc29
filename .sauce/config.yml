@@ -1,0 +1,26 @@
+apiVersion: v1alpha
+metadata:
+  name: Teste iOS EBAC
+  tags:
+    - ios
+    - wdio
+    - ebac
+sauce:
+  region: us-west-1
+  app: ./lojaebac.ipa
+  tunnel:
+    name: ""
+ios:
+  appiumVersion: "2.0.0"
+  devices:
+    - name: "iPhone.*"
+      platformVersion: "16"
+      orientation: "portrait"
+      language: "en"
+      locale: "en_US"
+artifacts:
+  download:
+    when: always
+    match:
+      - junit.xml
+      - sauce-test-report.json
