@@ -1,12 +1,39 @@
-# Testes iOS
+﻿# Testes Mobile iOS - EBAC
 
-Testes automatizados de login, navegação, carrinho e pagamento em um aplicativo iOS.
+Repositório para prática de automação de testes mobile em iOS com WebdriverIO e Appium.
 
-## Executar
+## Objetivo
+
+Validar fluxos de usuário em um aplicativo iOS, incluindo login, navegação, carrinho e finalização de compra.
+
+## Tecnologias
+
+- WebdriverIO
+- Appium
+- JavaScript
+- Sauce Labs
+
+## Pré-requisitos
+
+- Node.js
+- npm
+- Git
+- Appium e ambiente mobile configurado
+
+## Instalação
 
 ```bash
 npm install
+```
+
+## Execução
+
+```bash
 npm test
 ```
 
-Os testes usam WebdriverIO, Appium e Sauce Labs.
+## Estrutura do projeto
+
+- `test/` — cenários automatizados;
+- `wdio.config.js` — configuração do WebdriverIO;
+- `package.json` — scripts e dependências do projeto.
